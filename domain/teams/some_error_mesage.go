@@ -4,6 +4,7 @@ func NewSomeErrorMessage(msg string, err error, options map[string]string) *Chat
 	chatMessage := &ChatMessage{
 		Type:       "MessageCard",
 		Context:    "http://schema.org/extensions",
+		Summary:    msg,
 		ThemeColor: "0076D7",
 		Sections: []section{
 			{

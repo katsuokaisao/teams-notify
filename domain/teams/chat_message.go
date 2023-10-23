@@ -3,6 +3,7 @@ package teams
 type ChatMessage struct {
 	Type       string    `json:"@type"`
 	Context    string    `json:"@context"`
+	Summary    string    `json:"summary"`
 	ThemeColor string    `json:"themeColor"`
 	Sections   []section `json:"sections"`
 }
